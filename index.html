@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+
+  <title>Affordable Healthcare Finder</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav>
+
+    <h1>🏥 Healthcare Finder</h1>
+
+    <div class="nav-links">
+
+      <a href="#">Home</a>
+
+      <a href="#">Hospitals</a>
+
+      <a href="#">Doctors</a>
+
+      <a href="#">Emergency</a>
+
+    </div>
+
+  </nav>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <h2>
+
+      Affordable Healthcare Finder 🩺
+
+    </h2>
+
+    <p>
+
+      Find nearby hospitals, doctors,
+      medicine availability, emergency services
+      and affordable healthcare in Ballari.
+
+    </p>
+
+    <div class="hero-buttons">
+
+      <button onclick="findNearbyHospitals()">
+
+        📍 Nearby Hospitals
+
+      </button>
+
+      <button onclick="voiceSupport()">
+
+        🎤 Voice Support
+
+      </button>
+
+    </div>
+
+    <!-- SEARCH -->
+
+    <div class="search-box">
+
+      <input
+        type="text"
+        id="hospitalSearch"
+        placeholder="Search Hospital Name">
+
+      <button onclick="searchHospital()">
+
+        Search
+
+      </button>
+
+    </div>
+
+  </section>
+
+  <!-- HOSPITAL SECTION -->
+
+  <section>
+
+    <h2 class="section-title">
+
+      🏥 Ballari Hospitals
+
+    </h2>
+
+    <div
+      id="hospitalResults"
+      class="cards">
+
+    </div>
+
+  </section>
+
+  <!-- DOCTOR SECTION -->
+
+  <section>
+
+    <h2 class="section-title">
+
+      👨‍⚕️ Available Doctors
+
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>
+
+          Dr. Priya Sharma
+
+        </h3>
+
+        <p>
+
+          Cardiologist
+
+        </p>
+
+        <p>
+
+          Available:
+          10 AM - 5 PM
+
+        </p>
+
+        <button onclick="bookAppointment()">
+
+          Book Appointment
+
+        </button>
+
+      </div>
+
+      <div class="card">
+
+        <h3>
+
+          Dr. Rahul Verma
+
+        </h3>
+
+        <p>
+
+          Neurologist
+
+        </p>
+
+        <p>
+
+          Available:
+          9 AM - 2 PM
+
+        </p>
+
+        <button onclick="bookAppointment()">
+
+          Book Appointment
+
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- MEDICINE SECTION -->
+
+  <section class="medicine">
+
+    <h2 class="section-title">
+
+      💊 Medicine Availability
+
+    </h2>
+
+    <input
+      type="text"
+      id="medicineInput"
+      placeholder="Enter Medicine Name">
+
+    <button onclick="checkMedicine()">
+
+      Check Medicine
+
+    </button>
+
+    <p id="medicineResult"></p>
+
+  </section>
+
+  <!-- EMERGENCY SECTION -->
+
+  <section class="emergency">
+
+    <h2>
+
+      🚑 Emergency Support
+
+    </h2>
+
+    <p>
+
+      Quick emergency support and ambulance services.
+
+    </p>
+
+    <button onclick="callAmbulance()">
+
+      Ambulance
+
+    </button>
+
+    <button onclick="callEmergency()">
+
+      Emergency Call
+
+    </button>
+
+  </section>
+
+  <!-- FEATURES -->
+
+  <section>
+
+    <h2 class="section-title">
+
+      🌟 Features
+
+    </h2>
+
+    <div class="cards">
+
+      <div class="card">
+
+        <h3>
+
+          📍 Nearby Hospitals
+
+        </h3>
+
+        <p>
+
+          Detect nearby hospitals in Ballari.
+
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>
+
+          💰 Affordable Healthcare
+
+        </h3>
+
+        <p>
+
+          Compare consultation and scan prices.
+
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>
+
+          🎤 Voice Support
+
+        </h3>
+
+        <p>
+
+          Voice assistant explains app features.
+
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>
+
+          🗺 Google Maps
+
+        </h3>
+
+        <p>
+
+          Open hospitals directly in Google Maps.
+
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>
+
+          💊 Medicine Availability
+
+        </h3>
+
+        <p>
+
+          Check medicine availability nearby.
+
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h3>
+
+          🚑 Emergency Calls
+
+        </h3>
+
+        <p>
+
+          One click ambulance and emergency support.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <h2>
+
+      Affordable Healthcare Finder
+
+    </h2>
+
+    <p>
+
+      Affordable healthcare access for everyone 🌍
+
+    </p>
+
+    <p>
+
+      📞 Emergency: 108
+
+    </p>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
